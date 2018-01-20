@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row mid-container">
+    <div class="center-align">
+      <h1 class="blue-text">LOGIN</h1>
+      <br>
+      <form (ngSubmit)="authenticate(username, password)">
+        <input class="center-align" placeholder="Username" type="text" [(ngModel)]="username" name="username" /><br>
+        <input class="center-align" placeholder="Password" type="password" [(ngModel)]="password" name="password" /><hr>
+        <button type="submit">LOGIN</button>
+        
+        <div class="blue-text" style="padding-top: 15px;">
+            <p *ngIf = "loading">Loading... Please wait</p>
+        </div>
+        <div class="red-text">
+          <p *ngIf = "error">Error Retrieving Data</p>
+          <p *ngIf = "incorrectpass">Incorrect Credentials</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

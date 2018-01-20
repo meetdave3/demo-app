@@ -1,0 +1,40 @@
+<div class="container" *ngIf = "data">
+    <div class="row mid-container">
+      <div class="center-align">
+        <h1 class="blue-text">Family Data</h1>
+        <hr>
+        <table class="center-align" style="width:100%; border: 1px solid black;">
+          <tr >
+            <th>Member ID</th>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+          </tr>
+          <tr class="center-align" style="color: grey;" *ngFor="let familyInfo of familyData">
+            <td>{{familyInfo.memberId}}</td>
+            <td>{{familyInfo.firstName}}</td>
+            <td>{{familyInfo.middleName}}</td>
+            <td>{{familyInfo.lastName}}</td>
+          </tr>
+        </table>
+        <br>    
+      </div>
+    </div>
+</div>
+
+<div class="container" *ngIf = "loading">
+    <div class="row mid-container">
+      <div class="center-align">
+        <h1 class="blue-text">Loading ... </h1>
+      </div>
+    </div>
+</div>
+
+<div class="container" *ngIf = "nodata">
+    <div class="row mid-container">
+      <div class="center-align">
+        <h1 class="blue-text">No Data Added Yet</h1>
+      </div>
+    </div>
+</div>
+

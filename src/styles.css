@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+.mid-container {
+    position: fixed;
+    width: 20%; /* Set your desired with */
+    z-index: 2; /* Make sure its above other items. */
+    top: 50%;
+    left: 50%;
+    margin-top: -10%; /* Changes with height. */
+    margin-left: -10%; /* Your width divided by 2. */
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.blue-text {
+    color: #5721BD;
+}
+
+.red-text {
+    color: red;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.center-align {
+    text-align: center;
+}
