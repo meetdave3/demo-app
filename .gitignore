@@ -43,7 +43,6 @@ testem.log
 Thumbs.db
 
 #Angular CLI build
-.angular-cli.json
 .editorconfig
 karma.conf.js
 protractor.conf.js
